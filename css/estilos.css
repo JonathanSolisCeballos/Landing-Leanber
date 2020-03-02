@@ -1,0 +1,152 @@
+body{
+    font-family: Lato, sans-serif;
+    margin: 0;
+}
+h3 {
+    font-size: 42px;
+}
+
+/*HEADER*/
+.header{
+    background-color: #0298D7;
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header figure{
+    margin: 0;
+    margin-left: 70px;
+    padding: 5px;
+}
+.icon-logo{
+    width: 35px;
+    margin: 0;
+}
+.icon-nombre{
+    width: 110px;
+    margin-left: 8px;
+}
+.header a{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 35px;
+    height: inherit;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.menu{
+    height: inherit;
+}
+.header ol{
+    margin: 0px;
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+   height: inherit;
+}
+
+/*HERO*/
+.hero{
+    background-image: url('../assets/FondoL2.png');
+    height: 700px;
+    background-size: 1450px 700px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text{
+    margin-left: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.hero button{
+    background-color: #80F438;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+}
+.hero-img{
+    margin-right: 70px;
+}
+.hero-img-serv{
+    width: 600px;
+}
+
+h1{
+    font-family: Roboto, sans-serif;
+    line-height: 1.2em;
+    font-size: 48px;
+    margin: 0px;
+}
+h4{
+    font-family: Roboto, sans-serif;
+    line-height: 1.2em;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+/*COMUNIDAD*/
+.comunidad-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 100px;
+}
+.container-comunidad{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.comunidad-parrafo {
+    display: flex;
+    width: 800px;
+    text-align: center;
+    font-size: 28px;
+}
+.comunidad-text{
+    width: 500px;
+    justify-content: center;
+}
+.comunidad-text p{
+    font-size: 18px;
+}
+.comunidad-img{
+    width: 500px;
+    margin-right: 100px;
+}
+
+/*CONTACTO*/
+.contacto-img img{
+    width: 40px;
+}
+footer{
+    background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
+    background-size: 1480px 700px;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.footer-email{
+    justify-content: center;
+}
+
+input{
+   width: 300px;
+   height: 30px;
+}
