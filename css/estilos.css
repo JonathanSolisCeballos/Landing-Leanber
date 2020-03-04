@@ -21,14 +21,14 @@ h4{
 }
 
 /*HEADER*/
-.navbar{
+/* .navbar{
     position: fixed;
     width: 100%;
     display: inline-block;
-}
+} */
 .header{
-    /* background-color:#02A4D7 ; */
-    background-color: rgb(9, 162, 218, 0.9);
+    background-color:#039CD8 ;
+    /* background-color: rgb(9, 162, 218, 0.9); */
     color: white;
     display: flex;
     height: 50px;
@@ -79,8 +79,8 @@ ul{
 /*HERO*/
 .hero{
     background-image: url('../assets/FondoL2.png');
-    height: 900px;
-    background-size: 1450px 900px;
+    height: 800px;
+    background-size: 1450px 800px;
     background-position-x: center;
     background-repeat: no-repeat;
     display: flex;
@@ -102,7 +102,7 @@ ul{
     color: white;
 }
 .hero-img{
-    margin-bottom: 70px;
+    margin-bottom: 130px;
 }
 .hero-img-serv{
     width: 600px;
@@ -165,10 +165,137 @@ ul{
     justify-content: center;
 }
 
-/*CONTACTO*/
-.contacto-img img{
-    width: 40px;
+/*SERVICIOS*/
+.servicios-carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    background-color: #09C9DD;
 }
+.servicios h2{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-items: center;
+    font-size: 38px;
+}
+.servicios-item h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight:bold ;
+}
+.servicios-item p{
+    font-size: 24px;
+}
+.servicios-carousel-items{
+    padding: 30px 0px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+.servicios-item{
+    display: inline-block;
+    border: 1px solid white;
+    background-color: rgb(9, 182, 221, 0.2);
+    width: 650px;
+    height: 440px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.servicios-article{
+    display: flex;
+    justify-content: center;
+}
+.servicios-container-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*PROYECTOS*/
+.proyectos{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.proyectos-container{
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 3;
+}
+.proyectos-container h2{
+    font-size: 36px;
+}
+.proyectos-proyecto1{
+    height: 100vh;
+    background-color: rgba(171, 171, 171, 0.523);
+    border: 1px solid tomato;
+}
+.proyectos-proyecto1 img{
+    width: 180px;
+}
+.proyectos-img1{
+    display: flex;
+    justify-content: center;
+}
+.proyectos-proyecto2{
+    height: 100vh;
+    background-color: rgba(171, 171, 171, 0.523);
+    border: 1px solid tomato;
+}
+.proyectos-img2{
+    display: flex;
+    justify-content: center;
+}
+.proyectos-proyecto2 img{
+    width: 400px;
+
+}
+.proyectos-proyecto3{
+    height: 100vh;
+    background-color: rgba(171, 171, 171, 0.523);
+    border: 1px solid tomato;
+}
+
+/*CONTACTO*/
+/* .contacto-img img{
+    width: 40px;
+} */
+.contacto{
+    display: grid;
+}
+.contacto-title{
+    display: flex;
+    justify-content: center;
+}
+.contacto-buttons{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.contacto-button1{
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #0ACADF;
+    border: 5px solid #0A94DF;
+    color: white;
+    font-size: 36px;
+    border-radius: 20px;
+}
+.contacto-button2{
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #0A94DF;
+    border: 5px solid #0ACADF;
+    color: white;
+    font-size: 36px;
+    border-radius: 20px;
+}
+
+/*FOOTER*/
 footer{
     background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
     background-size: 1480px 700px;
@@ -179,8 +306,31 @@ footer{
 }
 .footer-email{
     justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 100px;
 }
-
+.footer-email-text{
+    font-size: 28px;
+    color: white;
+}
+.footer-email input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    height: 40px;
+    width: 400px;
+}
+.footer-email button{
+    background-color: #80F438;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 26px;
+    margin-left: 10px;
+    color: white;
+}
 input{
    width: 300px;
    height: 30px;
