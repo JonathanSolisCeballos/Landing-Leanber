@@ -169,7 +169,6 @@ ul{
 .servicios-carousel{
     width: 100%;
     overflow: scroll;
-    padding: 30px;
     position: relative;
     background-color: #09C9DD;
 }
@@ -248,7 +247,8 @@ ul{
     border-radius: 10px;
 }
 .proyectos-proyecto1 img{
-    width: 190px;
+    width: 450px;
+    height: 250px;
 }
 .proyectos-img1{
     display: flex;
@@ -279,7 +279,8 @@ ul{
     justify-content: center;
 }
 .proyectos-proyecto3 img{
-    width: 180px;
+    width: 360px;
+    height: 250px;
 }
 .proyectos-tarjetas{
     display: flex;
@@ -312,7 +313,7 @@ ul{
     justify-content: center;
 }
 .contacto-button1{
-    margin-right: 30px;
+    margin-right: 70px;
     padding: 20px;
     background-color: #0ACADF;
     border: 5px solid #0A94DF;
@@ -321,7 +322,7 @@ ul{
     border-radius: 20px;
 }
 .contacto-button2{
-    margin-left: 30px;
+    margin-left: 70px;
     padding: 20px;
     background-color: #0A94DF;
     border: 5px solid #0ACADF;
@@ -332,16 +333,24 @@ ul{
 
 /*FOOTER*/
 footer{
+    /* background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
+    background-size: 1480px 700px;
+    background-repeat: no-repeat;
+    height: 700px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.footer{
     background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
     background-size: 1480px 700px;
     background-repeat: no-repeat;
     height: 700px;
-    display: flex;
-    align-items: center;
+
 }
 .footer-email{
-    justify-content: center;
-    margin-left: 100px;
+    display: flex;
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 .footer-email-text{
@@ -354,7 +363,13 @@ footer{
     
 }
 .footer-email input{
+    padding: 5px 10px 5px 35px;
     background-color: transparent;
+    background-image: url(../assets/email.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
     border: 1px solid white;
     border-radius: 5px;
     color: white;
@@ -371,6 +386,66 @@ footer{
     margin-left: 10px;
     color: white;
 }
-.contacto-img img{
+.contacto-details{
+    display: grid;
+    margin: 0px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.contacto-img-logo{
+    width: 30px;
+}
+.contacto-img-nombre{
+    width: 90px;
+}
+.footer-follow p{
+   color: white;
+   font-size: 18px;
+}
+.contacto-links{
+    display: flex;
+    justify-content: center;
+}
+.contacto-links p{
+    color: white;
+}
+.contacto-img-redes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contacto-link{
     width: 50px;
+    height: 50px;
+}
+.contacto-link.facebook{
+    background-image: url(../assets/facebook.png);
+    background-size: 50px 50px
+}
+.contacto-link.instagram{
+   background-image: url(../assets/instagram-3.png);
+   background-size: 50px 50px
+}
+.contacto-link.twitter{
+    background-image: url(../assets/twitter-2.png);
+    background-size: 50px 50px
+}
+
+.contacto-details2{
+    display: flex;
+    justify-content: center;
+}
+.contacto-p-links1{
+    grid-column: 2 / span 1;
+    color: white;
+    margin: 0px;
+}
+.contacto-p-links2{
+    grid-column: 3 / span 1;
+    color: white;
+    margin: 0px;
+}
+.contacto-p-links3{
+    grid-column: 4 / span 1;
+    color: white;
+    margin: 0px;
 }
