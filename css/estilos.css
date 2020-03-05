@@ -50,11 +50,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*HEADER*/
-/* .navbar{
+.navbar{
     position: fixed;
     width: 100%;
     display: inline-block;
-} */
+    z-index: 1;
+} 
 .header {
   background-color: #039cd8;
   /* background-color: rgb(9, 162, 218, 0.9); */
@@ -116,9 +117,13 @@ ul {
   justify-content: space-between;
 }
 .hero-text {
+  margin-top: 50px;
   margin-left: 100px;
   text-align: center;
-  margin-bottom: 100px;
+}
+.hero-text a{
+  color: white;
+  text-decoration: none;
 }
 .hero button {
   background-color: #80f438;
@@ -128,6 +133,12 @@ ul {
   font-size: 28px;
   padding: 18px;
   color: white;
+}
+.hero-img-redes {
+  margin-top: 200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 80px);
 }
 .hero-img {
   margin-bottom: 130px;
@@ -337,7 +348,17 @@ ul {
   display: flex;
   justify-content: center;
 }
+.contacto-buttons a{
+  text-decoration: none;
+  color: white;
+}
 .contacto-button1 {
+  background-image: url(../assets/whatsapp-2.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: center;
+
   margin-right: 70px;
   padding: 20px;
   background-color: #0acadf;
@@ -367,7 +388,7 @@ footer {
   justify-content: center;
 }
 .footer {
-  background-image: url(../assets/Fondo\4\Leanber\Landing.png);
+  background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
   background-size: 1480px 700px;
   background-repeat: no-repeat;
   height: 700px;
