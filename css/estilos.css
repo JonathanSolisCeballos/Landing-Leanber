@@ -386,10 +386,6 @@ ul {
 
 /*FOOTER*/
 footer {
-  /* background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
-    background-size: 1480px 700px;
-    background-repeat: no-repeat;
-    height: 700px; */
   display: flex;
   align-content: center;
   justify-content: center;
@@ -404,6 +400,11 @@ footer {
   display: flex;
   margin-top: 250px;
   margin-bottom: 100px;
+}
+.footer-email a{
+  padding-right: 35px;
+  text-decoration: none;
+  color: white;
 }
 .footer-email-text {
   font-size: 28px;
@@ -429,6 +430,11 @@ footer {
   width: 400px;
 }
 .footer-email button {
+  background-image: url(../assets/whatsapp-2-white.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x: 236px;
   background-color: #80f438;
   border: 0;
   border-radius: 5px;
