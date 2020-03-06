@@ -1,6 +1,16 @@
-body {
+body,
+html {
   font-family: Lato, sans-serif;
   margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 62px;
 }
 h1 {
   font-family: Roboto, sans-serif;
@@ -50,18 +60,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*HEADER*/
-/* .navbar{
-    position: fixed;
-    width: 100%;
-    display: inline-block;
-} */
+.navbar {
+  /* position: fixed;
+  width: 100%;
+  display: inline-block;
+  z-index: 1;
+  padding: 0; */
+  background-color: #039cd8 !important;
+}
 .header {
   background-color: #039cd8;
-  /* background-color: rgb(9, 162, 218, 0.9); */
   color: white;
-  display: flex;
+  width: 100%;
+  max-width: 100%;
   height: 50px;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 ol,
 ul {
@@ -80,14 +94,14 @@ ul {
 }
 .icon-nombre {
   width: 90px;
-  margin-left: 8px;
 }
+
 .header a {
   display: flex;
   color: white;
   align-items: center;
   text-decoration: none;
-  margin: 0px 35px;
+  /* margin: 0px 35px; */
   height: inherit;
   padding: 0 10px;
   font-size: 18px;
@@ -112,13 +126,23 @@ ul {
   background-position-x: center;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.wrapper_hero {
+  display: flex;
+  width: 100%;
 }
 .hero-text {
+  margin-top: 50px;
   margin-left: 100px;
   text-align: center;
-  margin-bottom: 100px;
+}
+.hero-text a {
+  color: white;
+  text-decoration: none;
 }
 .hero button {
   background-color: #80f438;
@@ -128,6 +152,16 @@ ul {
   font-size: 28px;
   padding: 18px;
   color: white;
+}
+.hero-img-redes {
+  /* margin-top: 200px; */
+  margin-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 80px);
+}
+.hero-img-redes > a {
+  margin: auto;
 }
 .hero-img {
   margin-bottom: 130px;
@@ -168,12 +202,18 @@ ul {
 }
 .comunidad-parrafo {
   display: flex;
-  width: 800px;
+  /* width: 800px; */
   text-align: center;
   font-size: 24px;
+  margin: 0.5em 1.5em;
 }
 .comunidad-detail {
-  width: 500px;
+  /* width: 500px; */
+  margin: 0 1rem;
+}
+.comunidad-detail h3 {
+  padding-bottom: 5px;
+  border-bottom: 10px solid #09c9dd;
 }
 .comunidad-text {
   display: flex;
@@ -197,11 +237,11 @@ ul {
   width: 100%;
   overflow: scroll;
   position: relative;
-  background-color: #09c9dd;
+  /*   background-color: #09c9dd */
 }
-.servicios h2 {
-  margin-top: 70px;
-  margin-bottom: 40px;
+.servicios-title h2 {
+  margin: 0px;
+  padding: 50px 0px 20px 0px;
   text-align: center;
   justify-items: center;
   font-size: 38px;
@@ -209,8 +249,10 @@ ul {
 .servicios-item h3 {
   font-size: 30px;
   text-align: center;
-  color: white;
+  color: black;
   font-weight: bold;
+  border-bottom: 8px solid #09c9dd;
+  padding-bottom: 5px;
 }
 .servicios-item p {
   font-size: 24px;
@@ -222,8 +264,8 @@ ul {
 }
 .servicios-item {
   display: inline-block;
-  border: 1px solid white;
-  background-color: rgb(9, 182, 221, 0.2);
+  border: 1px solid #09c9dd;
+  /*   background-color: rgb(9, 182, 221, 0.2); */
   width: 650px;
   height: 440px;
   border-radius: 10px;
@@ -262,14 +304,14 @@ ul {
   grid-column: 1 / span 3;
 }
 .proyectos-container h2 {
+  padding: 25px 0px;
   font-size: 36px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 .proyectos-proyecto1 {
-  height: 600px;
+  height: 550px;
   /*     background-color: rgba(171, 171, 171, 0.523); */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #09c9dd;
   border-radius: 10px;
 }
 .proyectos-proyecto1 img {
@@ -281,9 +323,9 @@ ul {
   justify-content: center;
 }
 .proyectos-proyecto2 {
-  height: 600px;
+  height: 550px;
   /*     background-color: rgba(171, 171, 171, 0.523); */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #09c9dd;
   border-radius: 10px;
 }
 .proyectos-img2 {
@@ -294,9 +336,9 @@ ul {
   width: 400px;
 }
 .proyectos-proyecto3 {
-  height: 600px;
+  height: 550px;
   /*     background-color: rgba(171, 171, 171, 0.523); */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #09c9dd;
   border-radius: 10px;
 }
 .proyectos-img3 {
@@ -325,30 +367,46 @@ ul {
     width: 40px;
 } */
 .contacto {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 .contacto-title {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .contacto-buttons {
   margin-bottom: 20px;
-  height: 150px;
+  /* height: 150px; */
   display: flex;
   justify-content: center;
 }
+.contacto-buttons a {
+  text-decoration: none;
+  color: white;
+}
 .contacto-button1 {
-  margin-right: 70px;
+  /* background-image: url(../assets/whatsapp-2.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: center;
+ */
+  /* margin-right: 70px; */
   padding: 20px;
+  height: 120px;
   background-color: #0acadf;
   border: 5px solid #0a94df;
   color: white;
   font-size: 32px;
   border-radius: 20px;
+  margin: 2rem auto;
 }
 .contacto-button2 {
-  margin-left: 70px;
+  /* margin-left: 70px; */
+  margin: 2rem auto;
   padding: 20px;
+  height: 120px;
   background-color: #0a94df;
   border: 5px solid #0acadf;
   color: white;
@@ -374,8 +432,8 @@ footer {
 }
 .footer-email {
   display: flex;
-  margin-top: 250px;
-  margin-bottom: 100px;
+  margin: 250px 2rem 100px 2rem;
+  width: 100%;
 }
 .footer-email-text {
   font-size: 28px;
@@ -398,7 +456,7 @@ footer {
   color: white;
   margin-left: 10px;
   height: 45px;
-  width: 400px;
+  /* width: 400px; */
 }
 .footer-email button {
   background-color: #80f438;
@@ -408,6 +466,13 @@ footer {
   font-size: 24px;
   margin-left: 10px;
   color: white;
+}
+.footer-email-wrapper-input {
+  display: flex;
+  width: 50%;
+}
+.footer-email-wrapper-input button {
+  margin-top: 1rem;
 }
 .contacto-details {
   display: grid;
@@ -471,4 +536,128 @@ footer {
   grid-column: 4 / span 1;
   color: white;
   margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+  .servicios-title h2,
+  .proyectos-container h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  .wrapper_hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    position: relative;
+    top: -200px;
+    z-index: 1;
+    filter: blur(2px);
+    margin-bottom: 0;
+  }
+  .hero-img-serv {
+    z-index: 1;
+  }
+  .hero-img-redes {
+    position: relative;
+    top: -20vh;
+  }
+  .hero-text {
+    z-index: 2;
+    margin: 0 2rem 0 2rem;
+    position: relative;
+    top: 20vh;
+  }
+  .hero button {
+    width: 200px;
+    font-size: 22px;
+    padding: 8px;
+    margin-top: 1em;
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .comunidad-parrafo {
+    font-size: 20px;
+  }
+  .comunidad-text p {
+    font-size: 17px;
+    text-align: justify;
+  }
+  .comunidad-imgb {
+    width: 300px;
+  }
+  .item:nth-of-type(1) {
+    grid-column: 1 / span 1;
+  }
+  .item:nth-of-type(2) {
+    grid-column: 1 / span 1;
+  }
+  .item:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .servicios {
+    margin-top: 4rem;
+  }
+  .proyectos {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .proyectos-container {
+    grid-column: 1 / span 1;
+  }
+  .proyectos-proyecto1,
+  .proyectos-proyecto2,
+  .proyectos-proyecto3 {
+    margin: 1rem;
+  }
+  .contacto-buttons > button {
+    width: 200px;
+    height: 77px;
+    padding: 0px;
+    font-size: 23px;
+  }
+  .contacto-buttons {
+    margin-top: 1.5rem;
+  }
+  .contacto {
+    margin-top: 2rem;
+  }
+  .footer-email-text {
+    font-size: 20px;
+    margin-left: 1rem;
+  }
+  .footer-email-wrapper-input {
+    flex-direction: column;
+  }
+  .contacto-details {
+    margin: 0px 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-img-serv {
+    width: 370px;
+  }
+  .contacto-buttons {
+    flex-direction: column;
+  }
+  .proyectos-proyecto1 img,
+  .proyectos-proyecto2 img,
+  .proyectos-proyecto3 img {
+    width: 320px;
+    height: auto;
+  }
 }
