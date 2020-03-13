@@ -1,3 +1,34 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vf2zwo');
+  src:  url('../fonts/icomoon.eot?vf2zwo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vf2zwo') format('truetype'),
+    url('../fonts/icomoon.woff?vf2zwo') format('woff'),
+    url('../fonts/icomoon.svg?vf2zwo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
 body {
   font-family: Lato, sans-serif;
   margin: 0;
@@ -57,6 +88,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 1;
 } 
 .header {
+  flex-wrap: wrap;
   background-color: #039cd8;
   /* background-color: rgb(9, 162, 218, 0.9); */
   color: white;
@@ -107,6 +139,7 @@ ul {
 
 /*HERO*/
 .hero {
+  flex-wrap: wrap;
   background-image: url('../assets/FondoL2.png');
   height: 800px;
   background-size: 1450px 800px;
@@ -179,12 +212,12 @@ ul {
 }
 .comunidad-parrafo {
   display: flex;
-  width: 800px;
+  width: 80%;
   text-align: center;
   font-size: 24px;
 }
 .comunidad-detail {
-  width: 500px;
+  width: 80%;
 }
 .comunidad-detail h3{
   padding-bottom: 5px;
@@ -200,6 +233,9 @@ ul {
 .comunidad-imgb {
   margin: 0px;
   width: 400px;
+}
+.comunidad-img img{
+  max-width: 100%;
 }
 .comunidad figure {
   display: flex;
@@ -392,9 +428,9 @@ footer {
 }
 .footer {
   background-image: url(../assets/Fondo\ 4\ Leanber\ Landing.png);
-  background-size: 1480px 700px;
+  background-size: 100vw;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 100%;
 }
 .footer-email {
   display: flex;
@@ -505,4 +541,526 @@ footer {
   grid-column: 4 / span 1;
   color: white;
   margin: 0px;
+}
+
+.burger-button{
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  z-index: 2;
+}
+/*MEDIA QUERIES*/
+
+/*Desktop*/
+@media screen and (max-width: 1024px){
+  body{
+    border: 5px solid yellow;
+  }
+}
+
+/*tablets*/
+@media screen and (max-width: 767px){
+  body{
+    border: 5px solid red;
+  }
+  .burger-button{
+    display: block;
+  }
+  /*Header*/
+  .header {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  .header a{
+    font-size: 32px;
+  }
+  .navbar{
+    position: initial;
+    width: 100%;
+    display: inline-block;
+} 
+  .menu ol{
+    display: block;
+  }
+  .menu ol li{
+    height: 50px;
+  }
+  .menu a{
+    justify-content: center;
+  }
+  .header .logo{
+    margin-left: 0px;
+    text-align: center;
+  }
+  /*menu de hamburguesa*/
+  .menu{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left: -100vw;
+
+  }
+
+  /*Hero*/
+  .hero-img{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img-serv{
+    width: 60%;
+    height: 60%;
+  }
+  .hero-img-redes{
+    margin-top: 20px;
+  }
+  /*Comunidad*/
+  .comunidad{
+    display: block;
+    font-size: 36px;
+  }
+  .container-comunidad{
+    margin-bottom: 0px;
+  }
+  .comunidad-detail{
+    text-align: center;
+  }
+  .comunidad-parrafo{
+    font-size: .5em;
+  }
+  .comunidad-detail h3{
+    margin: .5em 0;
+    font-size: 1em;
+  }
+  .comunidad-detail p{
+    font-size: .5em;
+  }
+  /*Servicios*/
+  .servicios{
+    display: block;
+    font-size: 36px;
+  }
+  .servicios-title h2 {
+    margin: 0px;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+    justify-items: center;
+    font-size: 1em;
+  }
+  .servicios-item h3 {
+    font-size: .7em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 0px;
+    /* border-bottom: 8px solid #09c9dd; */
+    padding-bottom: 5px;
+  }
+  .servicios-item p {
+    font-size: .5em;
+  }
+  .servicios-carousel-items {
+    padding: 30px 0px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  .servicios-item {
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    border: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .servicios-container-img img{
+    max-width: 80%;
+    max-height: 100%;
+  }
+  .servicios-article {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .servicios-container-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*Proyectos*/
+.proyectos {
+  font-size: 36px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.proyectos p {
+  justify-content: center;
+  font-size: .5em;
+  font-weight: bold;
+}
+.proyectos-container-p {
+  display: flex;
+  justify-content: center;
+}
+.proyectos-container {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / span 1;
+}
+.proyectos-container h2 {
+  padding: 25px 0px;
+  font-size: .7em;
+}
+.proyectos-proyecto1 {
+  height: 550px;
+  border: 0px;
+/*   border: 1px solid #09c9dd; */
+  border-radius: 10px;
+}
+.proyectos-proyecto1 img {
+  width: 450px;
+  height: 250px;
+}
+.proyectos-img1 {
+  display: flex;
+  justify-content: center;
+}
+.proyectos-proyecto2 {
+  height: 550px;
+  border: 0px;
+/*   border: 1px solid #09c9dd; */
+  border-radius: 10px;
+}
+.proyectos-img2 {
+  display: flex;
+  justify-content: center;
+}
+.proyectos-proyecto2 img {
+  width: 400px;
+}
+.proyectos-proyecto3 {
+  height: 550px;
+  border: 0px;
+/*   border: 1px solid #09c9dd; */
+  border-radius: 10px;
+}
+.proyectos-img3 {
+  display: flex;
+  justify-content: center;
+}
+.proyectos-proyecto3 img {
+  width: 360px;
+  height: 250px;
+}
+.proyectos-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+.proyectos-tarjetas p {
+  font-weight: 500;
+  text-align: center;
+}
+.proyectos-tarjetas small {
+  font-size: 14px;
+  font-weight: 900;
+}
+/*Contacto*/
+.contacto {
+  font-size: 36px;
+  display: grid;
+}
+.contacto-title {
+  display: flex;
+  justify-content: center;
+}
+.contacto-title h3{
+  display: flex;
+  text-align: center;
+  font-size: 1em;
+
+}
+.contacto-buttons {
+  margin-bottom: 20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.contacto-buttons a{
+  text-decoration: none;
+  color: white;
+}
+.contacto-button1 {
+  /* background-image: url(../assets/whatsapp-2.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: center;
+ */
+  margin-right: 30px;
+  padding: 20px;
+  height: 120px;
+  background-color: #0acadf;
+  border: 5px solid #0a94df;
+  color: white;
+  font-size: .7em;
+  border-radius: 20px;
+}
+.contacto-button2 {
+  margin-left: 30px;
+  padding: 20px;
+  height: 120px;
+  background-color: #0a94df;
+  border: 5px solid #0acadf;
+  color: white;
+  font-size: .7em;
+  border-radius: 20px;
+}
+/*Footer*/
+.footer{
+  font-size: 36px;
+  display: block;
+}
+.footer-email{
+  display: block;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.footer-email-text{
+  font-size: .7em;
+}
+.footer-button{
+  display: flex;
+  justify-content: center;
+}
+.footer-follow p{
+  font-size: .4em;
+}
+.contacto-links{
+  font-size: .4em;
+}
+.contacto-details2{
+  font-size: .4em;
+}
+.contacto-link{
+  margin-left: 15px;
+}
+}
+
+/*mobil*/
+@media screen and (max-width: 320px){
+  body{
+    border: 5px solid greenyellow;
+  }
+
+  /*Hero*/
+  .hero{
+    font-size: 36px;
+  }
+  .hero-text{
+    margin-left: 0px;
+    margin-top: 2%;
+  }
+  .hero-text h1{
+    font-size: .8em;
+    margin: 0px 10px;
+  }
+  .hero-text h4{
+    font-size: .5em;
+    margin-top: 1%;
+  }
+  .hero button{
+    width: 200px;
+    padding: 12px;
+  }
+  .hero a{
+    font-size: .7em;
+  }
+  .hero-img{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img-serv{
+    width: 120%;
+    height: 120%;
+  }
+  .hero-img-redes{
+    display: none;
+  }
+
+  /*Comunidad*/
+  .comunidad{
+    font-size: 36px;
+  }
+  .container-comunidad{
+    margin-top: 1%;
+  }
+  .comunidad-parrafo{
+    margin-top: 1%;
+    font-size: .4em;
+  }
+  .comunidad-detail h3{
+    font-size: .8em;
+  }
+  .servicios-title h2{
+    font-size: .7em;
+  }
+
+  /*Servicios*/
+  .servicios-carousel{
+    font-size: 36px;
+  }
+  .servicios-item{
+    width: 98%;
+  }
+  .servicios-title{
+    padding: 0px;
+  }
+  .servicios-carousel-items{
+    padding: 0px;
+  }
+  .servicios-article h3{
+    font-size: .5em;
+  }
+  .servicios-article p{
+    font-size: .4em;
+  }
+
+  /*Proyectos*/
+  .proyectos{
+    font-size: 36px;
+  }
+  .proyectos-container h2{
+    font-size: .5em;
+  }
+  .proyectos-proyecto1{
+    width: 98%;
+    height: 100%;
+  }
+  .proyectos-img1 img{
+    width: 90%;
+    height: 90%;
+  }
+  .proyectos-proyecto2{
+    width: 98%;
+    height: 100%;
+  }
+  .proyectos-img2 img{
+    width: 90%;
+    height: 90%;
+  }
+  .proyectos-proyecto3{
+    width: 98%;
+    height: 100%;
+  }
+  .proyectos-img3 img{
+    width: 90%;
+    height: 90%;
+  }
+
+  /*Contacto*/
+  .contacto{
+    font-size: 36px;
+    margin: 0;
+    height: 100%;
+  }
+  .contacto-buttons{
+    margin: 0px;
+    height: 100px;
+  }
+  .contacto-title h3{
+    font-size: .5em;
+    margin: 4% 2%;
+  }
+  .contacto-button1{
+    width: 45%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px 5px;
+    border: 2px solid #0a94df;
+  }
+  .contacto-button2{
+    width: 45%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px 5px;
+    border: 2px solid #0acadf;
+  }
+  .contacto-buttons a{
+    font-size: .5em;
+    margin-bottom: 5px;
+  }
+
+  /*Footer*/
+  .footer{
+    font-size: 36px;
+  }
+  .footer-email{
+    margin-top: 12%;
+    margin-bottom: 2%;
+  }
+  .footer-email-text{
+    font-size: .3em;
+  }
+  .footer-button a{
+    font-size: .4em;
+  }
+  .contacto-details{
+    font-size: .5em;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .contacto-img-logo{
+    width: 10px;
+  }
+  .contacto-img-nombre{
+    width: 30px;
+  }
+  .footer-follow{
+    font-size: .4em;
+  }
+  .contacto-links{
+    font-size: .3em;
+  }
+  .contacto-details2{
+    font-size: .3em;
+  }
+  .contacto-link {
+    width: 20px;
+    height: 30px;
+  }
+  .contacto-link.facebook {
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+  }
+  .contacto-link.instagram {
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+  }
+  .contacto-link.twitter {
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+  }
+  .contacto-links p{
+    margin: 0px;
+  }
 }

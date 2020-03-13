@@ -4,18 +4,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leanber</title>
     <link rel="icon" type="image/png" href="assets/LogoLeanber.png">
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <div class="navbar">
         <header class="header">
                 <figure class="logo">
                     <img class="icon-logo" src="assets/Logo.png" alt="Logo de https://leanber.com">
                     <img class="icon-nombre" src="assets/Nombre Leanber.png" alt="Nombre de https://leanber.com">
                 </figure>
-                <nav class="menu">
+                <nav class="menu is-active">
                     <ol>
                         <li>
                             <a href="#Inicio">Inicio</a>
@@ -36,7 +37,7 @@
                 </nav>
         </header>
     </div>
-    <section class="hero" id="Inicio">
+ <section class="hero" id="Inicio">
         <div class="hero-text">
             <h1>Sé el cambio innovador que<br> 
                 quieres ver en el mundo</h1>
@@ -257,5 +258,22 @@
                 </div>
             </div>
     </section>
+<script>
+    const menu = document.querySelector('.menu');
+    console.log(menu)
+    const burgerbutton = document.querySelector('#burger-menu')
+    console.log(burgerbutton);
+
+    burgerbutton.addEventListener('click', hideShow)
+
+    function hideShow(){
+        if(menu.classList.contains('is-active')){
+            menu.classList.remove('is-active');
+
+        }else{
+            menu.classList.add('is-active');
+        }
+    }
+</script>
 </body>
 </html>
