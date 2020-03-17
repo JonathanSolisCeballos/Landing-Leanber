@@ -577,9 +577,7 @@ footer {
 
 /*Desktop*/
 @media screen and (max-width: 1024px){
-  body{
-    border: 5px solid yellow;
-  }
+
   .navbar{
     width: 100vw;
   }
@@ -619,9 +617,7 @@ footer {
 
 /*tablets*/
 @media screen and (max-width: 767px){
-  body{
-    border: 5px solid red;
-  }
+  
   .burger-button{
     display: block;
   }
@@ -930,9 +926,6 @@ footer {
 
 /*mobil*/
 @media screen and (max-width: 320px){
-  body{
-    border: 5px solid greenyellow;
-  }
 
   /*Hero*/
   .hero{
