@@ -613,6 +613,12 @@ footer {
   .hero-img-redes{
     margin-top: 20px;
   }
+  /*Proyectos*/
+
+  .proyectos img{
+    width: 100%;
+    height: 250px;
+  }
 }
 
 /*tablets*/
