@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leanber</title>
     <link rel="icon" type="image/png" href="assets/LogoLeanber.png">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <i class="icon-menu burger-button" id="burger-menu"></i>
@@ -50,9 +51,9 @@
                 <a href="https://twitter.com/LeanberOficial" target="_blank" class="contacto-link twitter"></a>
             </div>
         </div>
-        <figure class="hero-img">
+        <!-- <figure class="hero-img"> -->
             <img class="hero-img-serv" src="assets/SERV.png" width="550px" alt="imagen principal">
-        </figure>
+        <!-- </figure> -->
     </section>
     <section class="comunidad" id="Comunidad">
         <div class="item container-comunidad">
@@ -185,12 +186,13 @@
                 <img src="./assets/TuCalcetin_store.png" alt="e-commerce">
             </div>
             <div class="proyectos-tarjetas">
-                <p>"Inicie mi negocio de calcetines por<br>
-                    Instagram, pero tuve que migrar a mi<br>
-                    propia tienda online por la demanda.<br>
-                    La mejor desición que puede tomar<br>
-                    para mi negocio."<br>
-                    <small>TuCalcetin</small></p>
+                <p>"Inicie mi negocio de calcetines por
+                    Instagram, pero tuve que migrar a mi
+                    propia tienda online por la demanda.
+                    La mejor desición que puede tomar
+                    para mi negocio."
+                    <small>TuCalcetin</small>
+                    </p>
             </div>
         </div>
         <div class="proyectos-proyecto2">
@@ -201,12 +203,13 @@
                 <img src="./assets/restaurante.png" alt="Landing">
             </div>
             <div class="proyectos-tarjetas">
-                <p>"Nuestro sitema digital necesitaba de<br>
-                    presencia única, con la innovación que<br>
-                    nos caracteriza. Fue ahí donde optamos<br>
-                    por colaborar para desarrollar nuestra<br>
-                    Landing Page."<br>
-                    <small>Ringo</small></p>
+                <p>"Nuestro sitema digital necesitaba de
+                    presencia única, con la innovación que
+                    nos caracteriza. Fue ahí donde optamos
+                    por colaborar para desarrollar nuestra
+                    Landing Page."
+                    <small>Ringo</small>
+                  </p>
             </div>
         </div>
         <div class="proyectos-proyecto3">
@@ -217,12 +220,13 @@
                 <img src="./assets/diseño_app.png" alt="diseñoApp">
             </div>
             <div class="proyectos-tarjetas">
-                <p>"La interacción de interface y mucho<br>
-                    más importante, la interacción con<br>
-                    el usuario; son claves para una mayor<br>
-                    aceptación de tu productos en el<br>
-                    mercado."<br>
-                    <small>App Galery</small></p>
+                <p>"La interacción de interface y mucho
+                    más importante, la interacción con
+                    el usuario; son claves para una mayor
+                    aceptación de tu productos en el
+                    mercado."
+                    <small>App Galery</small>
+                    </p>
             </div>
         </div>
     </section>
@@ -240,16 +244,18 @@
             <div class="footer-email">
                 <label class="footer-email-text" for="email">Recibe información de nuestros eventos tecnológicos</label>
                 <!-- <input type="datetime" placeholder="Compartenos tu email" id="email"> -->
-                <button class="footer-button"><a href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20recibir%20información%20sobre%20sus%20eventos%20tecnológicos&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857">Envíanos un mensaje</a></button>
+                <button class="footer-button">
+                  <!-- <div class="footer-button-inner-container"> -->
+                    <a href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20recibir%20información%20sobre%20sus%20eventos%20tecnológicos&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857">Envíanos un mensaje</a>
+                    <img src="/assets/whatsapp-2-white.png" alt="logo whatsapp" class='footer-button-img' />
+                  <!-- </div> -->
+                </button>
             </div>
         </footer>
             <div class="contacto-details">
                 <div class="contacto-img">
                     <img class="contacto-img-logo" src="./assets/Logo.png" alt="">
                     <img class="contacto-img-nombre" src="./assets/Nombre Leanber.png" alt="nombre-img">
-                    <div class="footer-follow">
-                        <p>Follow us:</p>
-                    </div> 
                 </div>
                 <div class="contacto-links">
                     <p>Información</p>
@@ -261,6 +267,9 @@
                     <p>Soporte</p>
                 </div>
                 <div class="contacto-img-redes">
+                  <div class="footer-follow">
+                    <p>Follow us:</p>
+                </div> 
                     <a href="https://www.facebook.com/LeanberOficial" target="_blank" class="contacto-link facebook"></a>
                     <a href="https://www.instagram.com/leanber_oficial" target="_blank" class="contacto-link instagram"></a>
                     <a href="https://twitter.com/LeanberOficial" target="_blank" class="contacto-link twitter"></a>
@@ -286,24 +295,6 @@
                 </div>
             </div>
     </section>
-
-    <script>
-        const menu = document.querySelector('.menu');
-    console.log(menu)
-    const burgerbutton = document.querySelector('#burger-menu')
-    console.log(burgerbutton);
-
-    burgerbutton.addEventListener('click', hideShow);
-
-    function hideShow(){
-        if(menu.classList.contains('is-active')){
-            menu.classList.remove('is-active');
-
-        }else{
-            menu.classList.add('is-active');
-        }
-    }
-    </script>
 </body>
 </body>
 </html>
