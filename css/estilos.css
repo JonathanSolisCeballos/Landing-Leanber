@@ -120,7 +120,7 @@ ul {
   width: 90px;
   margin-left: 8px;
 }
-.header a {
+.header-links {
   display: flex;
   color: white;
   align-items: center;
@@ -129,6 +129,11 @@ ul {
   height: inherit;
   padding: 0 10px;
   font-size: 18px;
+}
+.footer-links {
+  color: white;
+  align-items: center;
+  text-decoration: none;
 }
 .menu {
   height: inherit;
@@ -147,7 +152,7 @@ ul {
   flex-wrap: wrap;
   background-image: url('../assets/FondoL2.png');
   height: 800px;
-  background-size: 1450px 800px;
+  background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
   display: flex;
@@ -253,6 +258,80 @@ ul {
 }
 
 /*SERVICIOS*/
+.carousel_container {
+  width: 60%;
+  /* max-height: 80vh; */
+  height: 40vw;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-light);
+  border-radius: 10px;
+  position: relative;
+
+  border: 1px solid #09c9dd;
+}
+.carousel_slide {
+  /* max-height: 80vh; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.carousel_slide > img,
+.carousel_slide > div {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  /* background: lightblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* .carousel_slide > div:nth-child(odd) {
+  background: lightcoral;
+} */
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  opacity: 0.2;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  width: 50%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#prevBtn:hover,
+#nextBtn:hover,
+#prevBtn:active,
+#nextBtn:active {
+  opacity: 1;
+}
+#nextBtn {
+  right: 0;
+}
+#prevBtn {
+  left: 0;
+}
+#prevBtn > img {
+  max-width: 50px;
+  transform-origin: center;
+  transform: rotate(180deg);
+  float: left;
+  margin-left: 1rem;
+}
+#nextBtn > img {
+  float: right;
+  max-width: 50px;
+  margin-right: 1rem;
+}
 .servicios-carousel {
   width: 100%;
   overflow: scroll;
@@ -283,14 +362,15 @@ ul {
   padding-bottom: 10px;
 }
 .servicios-item {
-  display: inline-block;
+  /* display: inline-block;
   border: 1px solid #09c9dd;
-  /*   background-color: rgb(9, 182, 221, 0.2); */
   width: 650px;
   height: 440px;
   border-radius: 10px;
   overflow: hidden;
-  margin-right: 10px;
+  margin-right: 10px; */
+  width: 60vw;
+  overflow: hidden;
 }
 .servicios-article {
   display: flex;
@@ -711,6 +791,9 @@ footer {
 }
 /*tablets*/
 @media screen and (max-width: 768px) {
+  .carousel_container {
+    width: 80%;
+  }
   /*Hero*/
   .hero {
     flex-wrap: wrap;
@@ -753,6 +836,10 @@ footer {
     font-size: 0.5em;
   }
   /*Servicios*/
+  #prevBtn > img,
+  #nextBtn > img {
+    width: 40px;
+  }
   .servicios {
     display: block;
     font-size: 36px;
@@ -973,6 +1060,10 @@ footer {
 @media screen and (max-width: 480px) {
   .hero-img-serv {
     width: 70%;
+  }
+  /* servicios */
+  .carousel_container {
+    width: 90%;
   }
 
   /* proyectos */
