@@ -1,181 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Leanber</title>
-    <link rel="icon" type="image/png" href="assets/LogoLeanber.png">
+    <link rel="icon" type="image/png" href="assets/LogoLeanber.png" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <i class="icon-menu burger-button" id="burger-menu"></i>
     <div class="navbar">
-        <header class="header">
-                <figure class="logo">
-                    <img class="icon-logo" src="assets/Logo.png" alt="Logo de https://leanber.com">
-                    <img class="icon-nombre" src="assets/Nombre Leanber.png" alt="Nombre de https://leanber.com">
-                </figure>
-                <nav class="menu is-active">
-                    <ol>
-                        <li>
-                            <a href="#Inicio" class='header-links'>Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#Comunidad" class='header-links'>Comunidad</a>
-                        </li>
-                        <li>
-                            <a href="#Servicios" class='header-links'>Servicios</a>
-                        </li>
-                        <li>
-                            <a href="#Proyectos" class='header-links'>Proyectos</a>
-                        </li>
-                        <li>
-                            <a href="#Contacto" class='header-links'>Contacto</a>
-                        </li>
-                    </ol>
-                </nav>
-        </header>
+      <header class="header">
+        <figure class="logo">
+          <img
+            class="icon-logo"
+            src="assets/Logo.png"
+            alt="Logo de https://leanber.com"
+          />
+          <img
+            class="icon-nombre"
+            src="assets/Nombre Leanber.png"
+            alt="Nombre de https://leanber.com"
+          />
+        </figure>
+        <nav class="menu is-active">
+          <ol>
+            <li>
+              <a href="#Inicio" class="header-links">Inicio</a>
+            </li>
+            <li>
+              <a href="#Comunidad" class="header-links">Comunidad</a>
+            </li>
+            <li>
+              <a href="#Servicios" class="header-links">Servicios</a>
+            </li>
+            <li>
+              <a href="#Proyectos" class="header-links">Proyectos</a>
+            </li>
+            <li>
+              <a href="#Contacto" class="header-links">Contacto</a>
+            </li>
+          </ol>
+        </nav>
+      </header>
     </div>
- <section class="hero" id="Inicio">
-        <div class="hero-text">
-            <h1>Sé el cambio innovador que<br> 
-                quieres ver en el mundo</h1>
-            <h4>Cuenta con nosotros para impactar<br>
-                positivamente al mundo</h4>
-            <button><a href="#Contacto">Colaboremos</a></button>
-            <div class="hero-img-redes">
-                <a href="https://www.facebook.com/LeanberOficial" target="_blank" class="contacto-link facebook"></a>
-                <a href="https://www.instagram.com/leanber_oficial" target="_blank" class="contacto-link instagram"></a>
-                <a href="https://twitter.com/LeanberOficial" target="_blank" class="contacto-link twitter"></a>
-            </div>
+    <section class="hero" id="Inicio">
+      <div class="hero-text">
+        <h1>
+          Sé el cambio innovador que<br />
+          quieres ver en el mundo
+        </h1>
+        <h4>
+          Cuenta con nosotros para impactar<br />
+          positivamente al mundo
+        </h4>
+        <button><a href="#Contacto">Colaboremos</a></button>
+        <div class="hero-img-redes">
+          <a
+            href="https://www.facebook.com/LeanberOficial"
+            target="_blank"
+            class="contacto-link facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/leanber_oficial"
+            target="_blank"
+            class="contacto-link instagram"
+          ></a>
+          <a
+            href="https://twitter.com/LeanberOficial"
+            target="_blank"
+            class="contacto-link twitter"
+          ></a>
         </div>
-        <!-- <figure class="hero-img"> -->
-            <img class="hero-img-serv" src="assets/SERV.png" width="550px" alt="imagen principal">
-        <!-- </figure> -->
+      </div>
+      <!-- <figure class="hero-img"> -->
+      <img
+        class="hero-img-serv"
+        src="assets/SERV.png"
+        width="550px"
+        alt="imagen principal"
+      />
+      <!-- </figure> -->
     </section>
+    <!-- astronauta SVG -->
+    <section class="space-section">
+      <!-- <div class="space-img-container"> -->
+      <img
+        src="/assets/Fondo-space.jpg"
+        alt="fondo espacio"
+        class="space-img-espacio"
+      />
+      <img
+        src="/assets/Astronaut2.png"
+        alt="Astronauta"
+        class="space-img-astronauta parallax"
+        data-parallaxrate="-0.4"
+        data-scalerate="0.0011"
+      />
+      <img
+        src="/assets/Fondo-space-withoutPlanetFull.jpg"
+        alt="estrellas de fondo"
+        class="space-img-espacio-bg"
+      />
+      <!-- </div> -->
+    </section>
+    <!-- END astronauta SVG -->
     <section class="comunidad" id="Comunidad">
-        <div class="item container-comunidad">
-            <p class="comunidad-parrafo">Entendemos la necesidad latente por innovar y desarrollar
-                tecnologías en LATAM. Por ese motivo nos enfocamos a crear
-                ideas disruptivas en código y con estrategias de alto impacto
-                para que ustedes nuestros colaboradores creen un futuro con mayores
-                oportunidades en este mundo hiperconectado.
-            </p>
-        </div>
-<!--     <section class="comunidad-detail"> -->
+      <div class="item container-comunidad">
+        <p class="comunidad-parrafo">
+          Entendemos la necesidad latente por innovar y desarrollar tecnologías
+          en LATAM. Por ese motivo nos enfocamos a crear ideas disruptivas en
+          código y con estrategias de alto impacto para que ustedes nuestros
+          colaboradores creen un futuro con mayores oportunidades en este mundo
+          hiperconectado.
+        </p>
+      </div>
+      <!--     <section class="comunidad-detail"> -->
+      <div class="comunidad-container">
         <div class="item comunidad-text">
-            <div class="comunidad-detail">
-                <h3>En equipo se llega más lejos</h3>
-                <p>En la comunidad Leanber tenemos el gen del aprendizaje infinito, que nos permite traer
-                    a la mesa nuevas propuestas para todos los socios, aportando entre todos nuevas
-                    alternativas. Nuestros eventos mensuales donde daremos a conocer nuevos Servicios
-                    tecnológicos. 
-                </p>
-            </div>
+          <div class="comunidad-detail">
+            <h3>En equipo se llega más lejos</h3>
+            <p>
+              En la comunidad Leanber tenemos el gen del aprendizaje infinito,
+              que nos permite traer a la mesa nuevas propuestas para todos los
+              socios, aportando entre todos nuevas alternativas. Nuestros
+              eventos mensuales donde daremos a conocer nuevos Servicios
+              tecnológicos.
+            </p>
+          </div>
         </div>
         <div class="item comunidad-img">
-            <figure>
-                <img class="comunidad-imgb" src="assets/Business_PNG.png" width="550px" alt="imagen comunidad">
-            </figure>
+          <figure>
+            <img
+              class="comunidad-imgb"
+              src="assets/Business_PNG.png"
+              width="550px"
+              alt="imagen comunidad"
+            />
+          </figure>
         </div>
-    <!-- </section> -->
+      </div>
+      <!-- </section> -->
     </section>
     <div class="servicios" id="Servicios">
       <div class="servicios-title">
-          <h2>Tus ideas disruptivas e innovadoras<br>
-              ahora en código</h2>
+        <h2>
+          Tus ideas disruptivas e innovadoras<br />
+          ahora en código
+        </h2>
       </div>
       <div class="carousel_container">
         <div class="carousel_slide">
-          <div id='lastImg'>
+          <div id="lastImg">
             <div class="servicios-item">
               <article class="servicios-article">
-                  <h3>Tiendas virtuales para potenciar<br>
-                      tus ventas online.</h3>
-                </article>
-                <article class="servicios-article">
-                    <p><strong>Única para productos únicos</strong><br>
-                      Es momento de introducirte al mercado de<br>
-                      consumo por excelencia de las nuevas<br>
-                      generaciones y adelantarte a tu competencia<br>
-                      para crear comunidad.</p>
-                </article>
-          </div>
+                <h3>
+                  Tiendas virtuales para potenciar<br />
+                  tus ventas online.
+                </h3>
+              </article>
+              <article class="servicios-article">
+                <p>
+                  <strong>Única para productos únicos</strong><br />
+                  Es momento de introducirte al mercado de<br />
+                  consumo por excelencia de las nuevas<br />
+                  generaciones y adelantarte a tu competencia<br />
+                  para crear comunidad.
+                </p>
+              </article>
+            </div>
           </div>
           <div>
             <div class="servicios-item">
               <div class="servicios-container-img">
-                  <img src="assets/Tienda.png" alt="foto" width="300px">
+                <img src="assets/Tienda.png" alt="foto" width="300px" />
               </div>
+            </div>
           </div>
-          </div>
-          <div> 
+          <div>
             <div class="servicios-item">
-            <article class="servicios-article">
+              <article class="servicios-article">
                 <h3>Landing Pages.</h3>
               </article>
               <article class="servicios-article">
-                  <p><strong>La presencia digital es tu cara al mundo de hoy</strong><br>
-                    No se trata de tener una simple página web<br>
-                    para tener presencia. Ahora se necesita dar<br>
-                    valor dentro de tu contenido sin necesidad<br>
-                    de afectar tus ventas. Los algoritmos serán<br>
-                    tus mejores aliados.</p>
+                <p>
+                  <strong
+                    >La presencia digital es tu cara al mundo de hoy</strong
+                  ><br />
+                  No se trata de tener una simple página web<br />
+                  para tener presencia. Ahora se necesita dar<br />
+                  valor dentro de tu contenido sin necesidad<br />
+                  de afectar tus ventas. Los algoritmos serán<br />
+                  tus mejores aliados.
+                </p>
               </article>
-        </div>
-      </div>
+            </div>
+          </div>
           <div>
             <div class="servicios-item">
               <div class="servicios-container-img">
-                  <img src="assets/Icon Leanber Landing.png" alt="foto" width="500px">
+                <img
+                  src="assets/Icon Leanber Landing.png"
+                  alt="foto"
+                  width="500px"
+                />
               </div>
-          </div>
+            </div>
           </div>
           <div>
             <div class="servicios-item">
               <article class="servicios-article">
-                  <h3>Algoritmos para el análisis de data</h3>
-                </article>
-                <article class="servicios-article">
-                    <p><strong>Automatizar y delegar para un crecimiento exponencial.</strong><br>
-                      Dejemos de utilizar métricas vanidosas que<br>
-                      frenan el crecimiento de nuestra empresa y<br>
-                      digitalecemos una tarea tan importante como<br>
-                      la filtración de datos útiles y claves para<br>
-                      nuestro crecimiento.</p>
-                </article>
-          </div>
+                <h3>Algoritmos para el análisis de data</h3>
+              </article>
+              <article class="servicios-article">
+                <p>
+                  <strong
+                    >Automatizar y delegar para un crecimiento
+                    exponencial.</strong
+                  ><br />
+                  Dejemos de utilizar métricas vanidosas que<br />
+                  frenan el crecimiento de nuestra empresa y<br />
+                  digitalecemos una tarea tan importante como<br />
+                  la filtración de datos útiles y claves para<br />
+                  nuestro crecimiento.
+                </p>
+              </article>
+            </div>
           </div>
           <div>
             <div class="servicios-item">
               <div class="servicios-container-img">
-                  <img src="assets/Icon 3 Leanber Landing.png" alt="foto" width="350px">
+                <img
+                  src="assets/Icon 3 Leanber Landing.png"
+                  alt="foto"
+                  width="350px"
+                />
               </div>
-          </div>
+            </div>
           </div>
           <div>
             <div class="servicios-item">
               <article class="servicios-article">
-                  <h3>Tiendas virtuales para potenciar<br>
-                      tus ventas online.</h3>
-                </article>
-                <article class="servicios-article">
-                    <p><strong>Única para productos únicos</strong><br>
-                      Es momento de introducirte al mercado de<br>
-                      consumo por excelencia de las nuevas<br>
-                      generaciones y adelantarte a tu competencia<br>
-                      para crear comunidad.</p>
-                </article>
+                <h3>
+                  Tiendas virtuales para potenciar<br />
+                  tus ventas online.
+                </h3>
+              </article>
+              <article class="servicios-article">
+                <p>
+                  <strong>Única para productos únicos</strong><br />
+                  Es momento de introducirte al mercado de<br />
+                  consumo por excelencia de las nuevas<br />
+                  generaciones y adelantarte a tu competencia<br />
+                  para crear comunidad.
+                </p>
+              </article>
+            </div>
           </div>
-          </div>
-          <div  id='firstImg'>
+          <div id="firstImg">
             <div class="servicios-item">
               <div class="servicios-container-img">
-                  <img src="assets/Tienda.png" alt="foto" width="300px">
+                <img src="assets/Tienda.png" alt="foto" width="300px" />
               </div>
-          </div>
+            </div>
           </div>
         </div>
         <button id="prevBtn">
@@ -187,126 +279,157 @@
       </div>
     </div>
     <section class="proyectos" id="Proyectos">
-        <div class="proyectos-container">
-            <h2>Nuestros últimos proyectos</h2>
+      <div class="proyectos-container">
+        <h2>Nuestros últimos proyectos</h2>
+      </div>
+      <div class="proyectos-proyecto1">
+        <div class="proyectos-container-p">
+          <p>E-Commerce para Tu Calcetín</p>
         </div>
-        <div class="proyectos-proyecto1">
-            <div class="proyectos-container-p">
-                <p>E-Commerce para Tu Calcetín</p>
-            </div>
-            <div class="proyectos-img1">
-                <img src="./assets/TuCalcetin_store.png" alt="e-commerce">
-            </div>
-            <div class="proyectos-tarjetas">
-                <p>"Inicie mi negocio de calcetines por
-                    Instagram, pero tuve que migrar a mi
-                    propia tienda online por la demanda.
-                    La mejor desición que puede tomar
-                    para mi negocio."
-                    <small>TuCalcetin</small>
-                    </p>
-            </div>
+        <div class="proyectos-img1">
+          <img src="./assets/TuCalcetin_store.jpg" alt="e-commerce" />
         </div>
-        <div class="proyectos-proyecto2">
-            <div class="proyectos-container-p">
-                <p>Landing page para Ringo</p>
-            </div>
-            <div class="proyectos-img2">
-                <img src="./assets/restaurante.png" alt="Landing">
-            </div>
-            <div class="proyectos-tarjetas">
-                <p>"Nuestro sitema digital necesitaba de
-                    presencia única, con la innovación que
-                    nos caracteriza. Fue ahí donde optamos
-                    por colaborar para desarrollar nuestra
-                    Landing Page."
-                    <small>Ringo</small>
-                  </p>
-            </div>
+        <div class="proyectos-tarjetas">
+          <p>
+            "Inicie mi negocio de calcetines por Instagram, pero tuve que migrar
+            a mi propia tienda online por la demanda. La mejor desición que
+            puede tomar para mi negocio."
+            <small>TuCalcetin</small>
+          </p>
         </div>
-        <div class="proyectos-proyecto3">
-            <div class="proyectos-container-p">
-                <p>UX/UI de App Galery</p>
-            </div>
-            <div class="proyectos-img3">
-                <img src="./assets/diseño_app.png" alt="diseñoApp">
-            </div>
-            <div class="proyectos-tarjetas">
-                <p>"La interacción de interface y mucho
-                    más importante, la interacción con
-                    el usuario; son claves para una mayor
-                    aceptación de tu productos en el
-                    mercado."
-                    <small>App Galery</small>
-                    </p>
-            </div>
+      </div>
+      <div class="proyectos-proyecto2">
+        <div class="proyectos-container-p">
+          <p>Landing page para Ringo</p>
         </div>
+        <div class="proyectos-img2">
+          <img src="./assets/restaurante.jpg" alt="Landing" />
+        </div>
+        <div class="proyectos-tarjetas">
+          <p>
+            "Nuestro sitema digital necesitaba de presencia única, con la
+            innovación que nos caracteriza. Fue ahí donde optamos por colaborar
+            para desarrollar nuestra Landing Page."
+            <small>Ringo</small>
+          </p>
+        </div>
+      </div>
+      <div class="proyectos-proyecto3">
+        <div class="proyectos-container-p">
+          <p>UX/UI de App Galery</p>
+        </div>
+        <div class="proyectos-img3">
+          <img src="./assets/diseño_app.png" alt="diseñoApp" />
+        </div>
+        <div class="proyectos-tarjetas">
+          <p>
+            "La interacción de interface y mucho más importante, la interacción
+            con el usuario; son claves para una mayor aceptación de tu productos
+            en el mercado."
+            <small>App Galery</small>
+          </p>
+        </div>
+      </div>
     </section>
     <section class="contacto" id="Contacto">
-        <form class="contacto-title" action="">
-            <h3>Cuéntanos ¿qué te gustaría que construyamos juntos?</h3>
-        </form>
-        <div class="contacto-buttons">
-            <button class="contacto-button1"><a href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20colaborar%20en%20un%20proyecto%20innovador&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857">proyecto innovador</a></button>
-            <button class="contacto-button2"><a href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20colaborar%20en%20un%20proyecto%20disruptivo&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857">proyecto disruptivo</a></button>
-        </div>
+      <form class="contacto-title" action="">
+        <h3>Cuéntanos ¿qué te gustaría que construyamos juntos?</h3>
+      </form>
+      <div class="contacto-buttons">
+        <button class="contacto-button1">
+          <a
+            href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20colaborar%20en%20un%20proyecto%20innovador&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857"
+            >proyecto innovador</a
+          >
+        </button>
+        <button class="contacto-button2">
+          <a
+            href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20colaborar%20en%20un%20proyecto%20disruptivo&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857"
+            >proyecto disruptivo</a
+          >
+        </button>
+      </div>
     </section>
     <section class="footer">
-        <footer>
-            <div class="footer-email">
-                <label class="footer-email-text" for="email">Recibe información de nuestros eventos tecnológicos</label>
-                <!-- <input type="datetime" placeholder="Compartenos tu email" id="email"> -->
-                <button class="footer-button">
-                  <!-- <div class="footer-button-inner-container"> -->
-                    <a href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20recibir%20información%20sobre%20sus%20eventos%20tecnológicos&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857">Envíanos un mensaje</a>
-                    <img src="/assets/whatsapp-2-white.png" alt="logo whatsapp" class='footer-button-img' />
-                  <!-- </div> -->
-                </button>
-            </div>
-        </footer>
-            <div class="contacto-details">
-                <div class="contacto-img">
-                    <img class="contacto-img-logo" src="./assets/Logo.png" alt="">
-                    <img class="contacto-img-nombre" src="./assets/Nombre Leanber.png" alt="nombre-img">
-                </div>
-                <div class="contacto-links">
-                    <p>Información</p>
-                </div>
-                <div class="contacto-links">
-                    <p>Links</p>
-                </div>
-                <div class="contacto-links">
-                    <p>Soporte</p>
-                </div>
-                <div class="contacto-img-redes">
-                  <div class="footer-follow">
-                    <p>Follow us:</p>
-                </div> 
-                    <a href="https://www.facebook.com/LeanberOficial" target="_blank" class="contacto-link facebook"></a>
-                    <a href="https://www.instagram.com/leanber_oficial" target="_blank" class="contacto-link instagram"></a>
-                    <a href="https://twitter.com/LeanberOficial" target="_blank" class="contacto-link twitter"></a>
-                </div>
-                <div class="contacto-details2">
-                    <p class="contacto-p-links1">
-                        <a href="#Inicio" class='footer-links'>Inicio</a><br>
-                        <a href="#Comunidad" class='footer-links'>Comunidad</a><br>
-                        <a href="#Servicios" class='footer-links'>Servicios</a><br>
-                        <a href="#Proyectos" class='footer-links'>Proyectos</a><br>
-                        <a href="#Contacto" class='footer-links'>Contacto</a>
-                    </p>
-                </div>
-                <div class="contacto-details2">
-                    <p class="contacto-p-links2">
-                        Aviso de privacidad
-                    </p>
-                </div>
-                <div class="contacto-details2">
-                    <p class="contacto-p-links3">
-                       (+52) 312-132-58-57
-                    </p>
-                </div>
-            </div>
+      <footer>
+        <div class="footer-email">
+          <label class="footer-email-text" for="email"
+            >Recibe información de nuestros eventos tecnológicos</label
+          >
+          <!-- <input type="datetime" placeholder="Compartenos tu email" id="email"> -->
+          <button class="footer-button">
+            <!-- <div class="footer-button-inner-container"> -->
+            <a
+              href="whatsapp://send?text=Hola,%20qué%20tal%20equipo%20Leanber,%20me%20interesa%20recibir%20información%20sobre%20sus%20eventos%20tecnológicos&phone=+52 1 312 132 5857&abid=+52 1 312 132 5857"
+              >Envíanos un mensaje</a
+            >
+            <img
+              src="/assets/whatsapp-2-white.png"
+              alt="logo whatsapp"
+              class="footer-button-img"
+            />
+            <!-- </div> -->
+          </button>
+        </div>
+      </footer>
+      <div class="contacto-details">
+        <div class="contacto-img">
+          <img class="contacto-img-logo" src="./assets/Logo.png" alt="" />
+          <img
+            class="contacto-img-nombre"
+            src="./assets/Nombre Leanber.png"
+            alt="nombre-img"
+          />
+        </div>
+        <div class="contacto-links">
+          <p>Información</p>
+        </div>
+        <div class="contacto-links">
+          <p>Links</p>
+        </div>
+        <div class="contacto-links">
+          <p>Soporte</p>
+        </div>
+        <div class="contacto-img-redes">
+          <div class="footer-follow">
+            <p>Follow us:</p>
+          </div>
+          <a
+            href="https://www.facebook.com/LeanberOficial"
+            target="_blank"
+            class="contacto-link facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/leanber_oficial"
+            target="_blank"
+            class="contacto-link instagram"
+          ></a>
+          <a
+            href="https://twitter.com/LeanberOficial"
+            target="_blank"
+            class="contacto-link twitter"
+          ></a>
+        </div>
+        <div class="contacto-details2">
+          <p class="contacto-p-links1">
+            <a href="#Inicio" class="footer-links">Inicio</a><br />
+            <a href="#Comunidad" class="footer-links">Comunidad</a><br />
+            <a href="#Servicios" class="footer-links">Servicios</a><br />
+            <a href="#Proyectos" class="footer-links">Proyectos</a><br />
+            <a href="#Contacto" class="footer-links">Contacto</a>
+          </p>
+        </div>
+        <div class="contacto-details2">
+          <p class="contacto-p-links2">
+            Aviso de privacidad
+          </p>
+        </div>
+        <div class="contacto-details2">
+          <p class="contacto-p-links3">
+            (+52) 312-132-58-57
+          </p>
+        </div>
+      </div>
     </section>
-</body>
-</body>
+  </body>
 </html>

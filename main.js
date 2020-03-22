@@ -21,6 +21,25 @@
       }
     }
 
+    // Efecto "parallax"
+    //Get the element(s) to apply the effect
+    let objectsToMove = document.querySelectorAll('.parallax');
+    console.log(objectsToMove);
+    window.addEventListener('scroll', e => {
+      objectsToMove.forEach(el => {
+        //apply the parallax effect
+        let position = window.pageYOffset * el.dataset.parallaxrate;
+        //add scale rate
+        let newScale = window.pageYOffset * el.dataset.scalerate;
+        // set a limit to prevent overflow,
+        // HARDCODED
+        if (this.screen.width <= 768)
+          position = position < -275 ? -275 : position;
+        //
+        el.style.transform = `translateY(${position}px) scale(${newScale}) `;
+      });
+    });
+
     // CAROUSEL THING
 
     //counter variable
@@ -76,8 +95,8 @@
     };
 
     carouselSlide.addEventListener('transitionend', () => {
-      console.log(`the count is: ${count}`);
-      console.log(carouselImages[count]);
+      // console.log(`the count is: ${count}`);
+      // console.log(carouselImages[count]);
       if (carouselImages[count].id === 'lastImg') {
         carouselSlide.style.transition = 'none';
         count = carouselImages.length - 2;
@@ -89,6 +108,6 @@
         carouselSlide.style.transform = `translateX(${-size * count}px)`;
       }
     });
-    reloadInterval();
+    // reloadInterval();
   };
 })();
