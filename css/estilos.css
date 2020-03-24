@@ -334,6 +334,7 @@ ul {
 }
 .comunidad-img img {
   max-width: 100%;
+  max-height: 100%;
 }
 .comunidad figure {
   display: flex;
@@ -461,6 +462,7 @@ ul {
 }
 .servicios-container-img img {
   max-width: 35%;
+  max-height: 35%;
 }
 .servicios-container-img .servicios-item-img-landing {
   max-width: 60%;
