@@ -1181,6 +1181,7 @@ footer {
   }
   .contacto-buttons {
     flex-direction: column;
+    margin-top: 4rem;
   }
   .contacto-buttons button {
     margin: 1rem;
